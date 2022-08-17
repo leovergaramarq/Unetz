@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <title>Unetz</title>
+</head>
+
+<body>
+  <nav id="nav-sider">
+    <span id="close-nav-sider" class="cursor-pointer">
+      <i class="fa-solid fa-xmark"></i>
+    </span>
+    <ul id="menu-sider">
+      <!-- <li class="menu-sider__li_logo">
+        <div><img src="../assets/logo-06.png" alt="Unetz Logo" id="nav-main__logo"></div>
+      </li> -->
+      <li id="menu-sider__title">
+        <!-- <div><span>CATEGORÍAS</span></div> -->
+        CATEGORÍAS
+      </li>
+      <hr>
+      <li class="cursor-pointer">
+        <!-- <div><a href="#"><span>Alimentos</span></a></div> -->
+        Alimentos
+      </li>
+      <hr>
+      <li class="cursor-pointer">
+        <!-- <div><a href="#"><span>Ropa</span></a></div> -->
+        Ropa
+      </li>
+      <hr>
+      <li class="cursor-pointer">
+        <!-- <div><a href="#"><span>Ferretería</span></a></div> -->
+        Ferretería
+      </li>
+      <hr>
+      <li class="cursor-pointer">
+        <!-- <div><a href="#"><span>Miscelánea</span></a></div> -->
+        Miscelánea
+      </li>
+    </ul>
+  </nav>
+  
+  <div id="dark-area"></div>
+
+  <header>
+    <div id="header-left">
+      <span id="open-nav-sider" class="cursor-pointer">
+        <!-- <a href="#" class="nav-main__a toggle_nav-sider text-underlined"> -->
+        <i class="fas fa-bars"></i>
+      </span>
+      <span>
+        <a href=".">
+          <img id="logo" src="../assets/logo-06.png" alt="Unetz Logo">
+        </a>
+      </span>
+    </div>
+
+    <div id="search">
+      <input type="text" placeholder="¿Qué estás buscando?" />
+      <button type="menu" class="cursor-pointer">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+
+    <nav class="nav-main">
+      <ul>
+        <li class="nav-main__li">
+          <a href="#" class="nav-main__a text-underlined">
+            Vende tu Producto<i class="fas fa-handshake"></i>
+          </a>
+        </li>
+        <li class="nav-main__li">
+          <a href="#" class="nav-main__a text-underlined" id="cart">
+            Carrito<i class="fas fa-shopping-cart"></i></a>
+        </li>
+        <li class="nav-main__li">
+          <a href="#" class="nav-main__a  text-underlined" id="login">
+            Inicia Sesión<i class="fas fa-user"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+    <section id="main">
+      <div id="selector-main-content">
+        <div selected>Lo Más Reciente</div>
+        <div>Productos Populares</div>
+      </div>
+      <hr />
+      <ul id="main-prod">
+        <li>
+          <a href="#">
+            <!--Foto de DS stories en Pexels-->
+            <img src="../assets/new/preview_1.jpg">
+          </a>
+          <span class="arrow prod-arrow prod-arrow-left cursor-pointer">
+            <i class="fa-solid fa-chevron-circle-left"></i>
+          </span>
+          <span class="arrow prod-arrow prod-arrow-right cursor-pointer">
+            <i class="fa-solid fa-chevron-circle-right"></i>
+          </span>
+        </li>
+        <li>
+          <a href="#">
+            <!--<a href='https://www.freepik.es/psd/logo'>Psd de Logo creado por originalmockup - www.freepik.es</a>-->
+            <img src="../assets/new/preview_2.jpg">
+          </a>
+          <span class="arrow prod-arrow prod-arrow-left"><i class="fa-solid fa-chevron-circle-left"></i></span>
+          <span class="arrow prod-arrow prod-arrow-right"><i class="fa-solid fa-chevron-circle-right"></i></span>
+        </li>
+        <li>
+          <a href="#">
+            <!--<a href='https://www.freepik.es/fotos/fondo'>Foto de Fondo creado por mrsiraphol - www.freepik.es</a>-->
+            <img src="../assets/new/preview_3.jpg">
+          </a>
+          <span class="arrow prod-arrow prod-arrow-left"><i class="fa-solid fa-chevron-circle-left"></i></span>
+          <span class="arrow prod-arrow prod-arrow-right"><i class="fa-solid fa-chevron-circle-right"></i></span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="banner-prom" class="banner">
+      <ul>
+        <li id="sliding-1">
+          <a href="#"><img src="../assets/banner/prom/banner_1.png"></a>
+        <li  id="sliding-2">
+          <a href="#"><img src="../assets/banner/prom/banner_2.png"></a>
+        <li  id="sliding-3">
+          <a href="#"><img src="../assets/banner/prom/banner_3.png"></a>
+        </li>
+      </ul>
+      <span class="arrow banner-arrow banner-arrow-left">
+        <i class="fas fa-chevron-circle-left"></i>
+      </span>
+      <span class="arrow banner-arrow banner-arrow-right">
+        <i class="fas fa-chevron-circle-right"></i>
+      </span>
+    </section>
+    
+    <div class="slide">
+      <span>Los alimentos que buscas</span>
+      <!-- <a href='https://www.freepik.com/photos/frame'>Frame photo created by freepik - www.freepik.com</a> -->
+      <a href="#" class="slide__item">
+        <img src="../assets/categories/food/veg.jpg">
+      </a>
+      <a href="#" class="slide__item">
+        <img src="../assets/categories/food/grain.jpg">
+      </a>
+      <!-- https://www.pexels.com/es-es/foto/comida-madera-filete-carne-5774154/ -->
+      <a href="#" class="slide__item">
+        <img src="../assets/categories/food/meat.jpg">
+      </a>
+      <!-- https://www.pexels.com/es-es/foto/close-up-de-leche-contra-el-fondo-azul-248412/ -->
+      <a href="#" class="slide__item">
+        <img src="../assets/categories/food/lac.jpg">
+      </a>
+      <!-- Image by <a href="https://pixabay.com/users/margenauer-271373/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=356102">Marge Nauer</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=356102">Pixabay</a> -->
+      <a href="#" class="slide__item">
+        <img src="../assets/categories/food/oil.jpg">
+      </a>
+      <!-- Image by <a href="https://pixabay.com/users/couleur-1195798/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1585060">Couleur</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1585060">Pixabay</a> -->
+      <a href="#" class="slide__item">
+        <img src="../assets/categories/food/tuber.jpg">
+      </a>
+    </div>
+    <div class="clothes">
+      <span>Mantente a la moda</span>
+      <!-- Image by <a href="https://pixabay.com/users/stevepb-282134/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=584850">Steve Buissinne</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=584850">Pixabay</a> -->
+      <a href="#" class="slide__item">
+        <img src="../assets/categories/clothes/shoes.jpg">
+      </a>
+      <!-- https://pixabay.com/photos/t-shirt-design-book-self-boy-2336850/ -->
+      <a href="#" class="slide__item">
+        <img src="../assets/categories/clothes/t-shirt.jpg">
+      </a>
+      <!-- https://www.pexels.com/es-es/foto/calzado-converse-disenar-estilo-52574/ -->
+      <a href="#" class="slide__item">
+        <img src="../assets/categories/clothes/jeans.jpg">
+      </a>
+      <!-- Image by <a href="https://pixabay.com/users/stux-12364/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=377487">Thanks for your Like • donations welcome</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=377487">Pixabay</a> -->
+      <a href="#" class="slide__item">
+        <img src="../assets/categories/clothes/underwear.jpg">
+      </a>
+      <!-- Foto de Jeffrey Reed en Pexels -->
+      <a href="#" class="slide__item">
+        <img src="../assets/categories/clothes/shirt.jpg">
+      </a>
+      <!-- Foto de Quang Anh Ha Nguyen en Pexels -->
+      <a href="#" class="slide__item">
+        <img src="../assets/categories/clothes/dress.jpg">
+      </a>
+    </div>
+    <section class="banner prom">
+      <a href="#" class="banner prom">
+        <p class="banner_txt">¿QUÉ PRODUCTO QUIERES VENDER?</span>
+      </a>
+      <a href=""><i class="fas fa-angle-left"></i></a>
+      <a href=""><i class="fas fa-angle-right"></i></a>
+    </section>
+  </div>
+
+  <section class="social">
+    <p id="social__p">Síguenos en redes</span>
+    <!--
+            <i class="fab fa-facebook-f">
+                <i class="fab fa-facebook">
+        -->
+    <a href="#" class="social__a"><i class="fab fa-facebook-square"></i></a>
+    <a href="#" class="social__a"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="social__a"><i class="fab fa-twitter"></i></a>
+
+  </section>
+
+  <div class="footer">
+    <ul>
+      <li>
+        <a href="#">
+          <h3>CATEGORÍAS</h3>
+        </a>
+      </li>
+      <li>
+        <a href="#">Alimentos</a>
+      </li>
+      <li>
+        <a href="#">Ropa</a>
+      </li>
+      <li>
+        <a href="#">Ferretería</a>
+      </li>
+      <li>
+        <a href="#">Miscelánea</a>
+      </li>
+      </u>
+      <ul>
+        <li>
+          <a href="#">
+            <h3>NUESTRA EMPRESA</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#">Domicilios</a>
+        </li>
+        <li>
+          <a href="#">Quiénes Somos</a>
+        </li>
+        <li>
+          <a href="#">Trabaja con Nosotros</a>
+        </li>
+        </u>
+        <ul>
+          <li>
+            <a href="#">
+              <h3>INFORMACIÓN LEGAL</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#">General</a>
+          </li>
+          <li>
+            <a href="#">Términos y Condiciones</a>
+          </li>
+          <li>
+            <a href="#">Política de Privacidad</a>
+          </li>
+          <li>
+            <a href="#">Política de Reembolso</a>
+          </li>
+          </u>
+          <ul>
+            <li>
+              <a href="#">
+                <h3>ATENCIÓN AL CLIENTE</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-question-circle"></i>Preguntas Frecuentes</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-phone-alt"></i>9999999999</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-mobile-alt"></i>+57 999999999</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-envelope"></i>atencionalcliente@unetz.com</a>
+            </li>
+            </u>
+  </div>
+
+  <script type="module" src="../js/index.js"></script>
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+</body>
+
+</html>
