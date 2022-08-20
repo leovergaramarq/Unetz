@@ -1,5 +1,5 @@
-let currentProm = 0;
-let interval;
+// let currentProm = 0;
+// let interval;
 
 export default function banner() {
     // document.querySelector('#banner-prom ul').remove
@@ -27,24 +27,14 @@ function next($banner) {
 }
 
 function move($banner, dir) {
-    // currentProm = (currentProm + dir) % $banner.children.length;
-    // if(dir > 0) {
-    //     $banner.insert
-    // }
     if(dir > 0) {
         const $first = $banner.firstElementChild;
         const $last = $banner.lastElementChild;
 
-        // $banner.removeChild($last);
-        // $banner.insertAdjacentElement('afterbegin', $last);
-        
-        // $first.style.transform = 'translateX(-1vw)';
-        // $last.style.transform = 'translateX(-1vw)';
+        $banner.removeChild($last);
+        $banner.insertAdjacentElement('afterbegin', $last);
 
-        // $first.style.animation = 'slide-right 0.5s';
-        // $last.style.animation = 'slide-right 0.5s';
-        
-        // $first.style.animation = 'none';
-        // $last.style.animation = 'none';
+        $last.style.animation = 'slide-right 1s';
+        // $first.style.animation = 'slide-right 1s';
     }
 }

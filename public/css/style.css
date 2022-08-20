@@ -370,7 +370,7 @@ header i {
 
 #banner-prom {
     position: relative;
-    margin: 80px 0;
+    margin: 80px auto;
     width: 100%;
     height: 360px;
 }
@@ -380,12 +380,12 @@ header i {
 }
 
 #banner-prom ul {
-    /* display: flex;
-    width: 300%; */
+    display: flex;
 }
 
 #banner-prom li {
-    position: absolute;
+    /* position: relative; */
+    /* animation: slide-right 1s; */
 }
 
 #banner-prom a {
@@ -397,9 +397,6 @@ header i {
 
 #banner-prom img {
     object-fit: cover;
-    /* animation: slide_left 2s normal;
-    animation: none; */
-    /* animation-direction: reverse; */
 }
 
 .banner-arrow {
@@ -441,13 +438,17 @@ header i {
 
 @keyframes slide-right {
     0% {
-        /* margin-left: 0; */
-        transform: translateX(0);
+        margin-left: -100%;
+        /* margin-right: 100%; */
+        /* transform: translateX(-100%); */
+        /* transform: translateX(-100vw); */
     }
 
     100% {
-        /* margin-left: 100%; */
-        /* transform: translateX(100%); */
-        transform: translateX(1vw);
+        /* transform: translateX(0); */
+        /* margin-left: 0; */
+        /* margin-right: 0; */
+        /* transform: translateX(0); */
+        /* transform: translateX(0); */
     }
 }
