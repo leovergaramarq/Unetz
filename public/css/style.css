@@ -340,14 +340,26 @@ header i {
     position: relative;
 }
 
+#main-prod li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #main-prod li:hover > .prod-arrow  {
     display: initial;
 }
 
 .prod-arrow {
     display: none;
-    color: var(--gray-3);
+    opacity: 0.4;
     font-size: 32px;
+}
+
+.prod-arrow:hover {
+    opacity: 0.6;
 }
 
 .prod-arrow-left {
@@ -360,39 +372,29 @@ header i {
     margin-right: 4px;
 }
 
-/*BANNER*/
-
-.banner {
-    overflow: hidden;
-}
-
 /*BANNER PROM*/
 
 #banner-prom {
-    position: relative;
     margin: 80px auto;
     width: 100%;
     height: 360px;
 }
 
-#banner-prom:hover > .banner-arrow {
-    display: initial;
+/* SLIDER */
+
+.slider {
+    position: relative;
+    /* width: 100%; */
+    height: 100%;
+    overflow: hidden;
 }
 
-#banner-prom ul {
+.slider ul {
     display: flex;
 }
 
-#banner-prom li {
-    /* position: relative; */
-    /* animation: slide-right 1s; */
-}
-
-#banner-prom a {
-    /* color: var(--white);
-    font-size: 40px;
-    position: absolute;
-    transform: translateY(-120px); */
+.slider li {
+    width: 100%;
 }
 
 #banner-prom img {
@@ -400,20 +402,29 @@ header i {
 }
 
 .banner-arrow {
-    /* display: none; */
+    display: none;
+    opacity: 0.5;
     color: var(--white);
     font-size: 36px;
+}
+
+#banner-prom .slider:hover > .banner-arrow {
+    display: initial;
+}
+
+.banner-arrow:hover {
+    opacity: 1;
 }
 
 .banner-arrow i {
     text-shadow: 0 0 5px var(--black);
 }
 
-.banner-arrow-left {
+.banner-arrow.arrow-left {
     left: 6px;
 }
 
-.banner-arrow-right {
+.banner-arrow.arrow-right {
     right: 6px;
 }
 
@@ -427,10 +438,6 @@ header i {
 }
 
 @keyframes slide-left {
-    0% {
-        margin-left: 0;
-    }
-
     100% {
         margin-left: -100%;
     }
@@ -439,16 +446,5 @@ header i {
 @keyframes slide-right {
     0% {
         margin-left: -100%;
-        /* margin-right: 100%; */
-        /* transform: translateX(-100%); */
-        /* transform: translateX(-100vw); */
-    }
-
-    100% {
-        /* transform: translateX(0); */
-        /* margin-left: 0; */
-        /* margin-right: 0; */
-        /* transform: translateX(0); */
-        /* transform: translateX(0); */
     }
 }

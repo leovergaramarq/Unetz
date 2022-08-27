@@ -1,10 +1,10 @@
 import menuSider from './menuSider.js';
 import selectorMainContent from './selectorMainContent.js';
-import banner from './banner.js';
+import sliders from './slides.js';
 
 menuSider();
 selectorMainContent();
-banner();
+sliders();
 
 // document.querySelector('.toggle_categories').addEventListener('click', () => {
 //     document.querySelector('.categories').classList.toggle('show');
