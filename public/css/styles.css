@@ -2,12 +2,6 @@
 
 :root {
     --white: #fff;
-    --green-primary: #5cdb95;
-    --green-secondary: #87e2b0;
-    --green-tertiary: #53c587;
-    --yellow-primary: #e6ca51;
-    --yellow-secondary: #e6ca51;
-    --yellow-tertiary: #e6ca51;
     --blue-primary: #16566b;
     --blue-secondary: #1a6883;
     --blue-tertiary: #207c9b;
@@ -210,10 +204,12 @@ header i {
     right: 20px;
     top: 20px;
     font-size: 20px;
+    color: var(--white);
+    transition: all 0.1s ease;
 }
 
-#close-nav-sider {
-    color: var(--white);
+#close-nav-sider:hover {
+    font-size: 22px;
 }
 
 #logout {
@@ -472,6 +468,7 @@ main {
 
 #social div {
     font-size: 20px;
+    font-weight: bold;
 }
 
 #social ul {
@@ -487,6 +484,7 @@ main {
     color: var(--pink-primary);
     font-size: 32px;
     transition: all .1s ease-in-out;
+    transform: translateX(-50%);
 }
 
 #social a:hover {
@@ -502,7 +500,7 @@ footer {
     margin-top: 20px;
     background: var(--blue-dark);
     /* color: #fff !important; */
-    font-size: 16px;
+    font-size: 14px;
     /* font-weight: bold; */
     letter-spacing: 1px;
 }
