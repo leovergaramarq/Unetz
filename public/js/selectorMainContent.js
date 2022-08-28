@@ -1,5 +1,5 @@
 export default function selectorMainContent() {
-    const $options = document.querySelector('#selector-main-content').children;
+    const $options = document.querySelector('#selector-prod-primary').children;
 
     for(let $op of $options) {
         $op.addEventListener('click', () => {

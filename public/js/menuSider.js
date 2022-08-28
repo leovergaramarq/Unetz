@@ -21,6 +21,13 @@ export default function menuSider() {
             $darkArea.removeAttribute('visible');
         }
     });
+
+    document.addEventListener('keydown', e => {
+        if(e.key === 'Escape' && $navSider.hasAttribute('displayed')) {
+            $navSider.removeAttribute('displayed');
+            $darkArea.removeAttribute('visible');
+        }
+    });
 }
 
 function hasAncestor($elem, $ancestor) {

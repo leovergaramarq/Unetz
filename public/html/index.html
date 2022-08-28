@@ -7,11 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="icon" href="../assets/img/logo/logo-i.ico">
   <title>Unetz</title>
 </head>
 
@@ -20,37 +23,40 @@
     <span id="close-nav-sider" class="cursor-pointer">
       <i class="fa-solid fa-xmark"></i>
     </span>
+    <span id="logout" class="cursor-pointer hidden">
+      <i class="fa-solid fa-arrow-right-to-bracket"></i>
+    </span>
     <ul id="menu-sider">
       <!-- <li class="menu-sider__li_logo">
-        <div><img src="../assets/logo-06.png" alt="Unetz Logo" id="nav-main__logo"></div>
+        <div><img src="../assets/img/logo-06.png" alt="Unetz Logo" id="nav-main__logo"></div>
       </li> -->
       <li id="menu-sider__title">
         <!-- <div><span>CATEGORÍAS</span></div> -->
         CATEGORÍAS
       </li>
-      <hr>
+      <hr />
       <li class="cursor-pointer">
         <!-- <div><a href="#"><span>Alimentos</span></a></div> -->
         Alimentos
       </li>
-      <hr>
+      <hr />
       <li class="cursor-pointer">
         <!-- <div><a href="#"><span>Ropa</span></a></div> -->
         Ropa
       </li>
-      <hr>
+      <hr />
       <li class="cursor-pointer">
         <!-- <div><a href="#"><span>Ferretería</span></a></div> -->
         Ferretería
       </li>
-      <hr>
+      <hr />
       <li class="cursor-pointer">
         <!-- <div><a href="#"><span>Miscelánea</span></a></div> -->
         Miscelánea
       </li>
     </ul>
   </nav>
-  
+
   <div id="dark-area"></div>
 
   <header>
@@ -61,7 +67,7 @@
       </span>
       <span>
         <a href=".">
-          <img id="logo" src="../assets/logo-06.png" alt="Unetz Logo">
+          <img id="logo" src="../assets/img/logo/logo-l.png" alt="Unetz Logo">
         </a>
       </span>
     </div>
@@ -92,60 +98,82 @@
     </nav>
   </header>
 
-  <div id="content">
-    <section id="main">
-      <div id="selector-main-content">
-        <div selected>Lo Más Reciente</div>
-        <div>Productos Populares</div>
-      </div>
-      <hr />
-      <ul id="main-prod">
-        <li>
-          <a href="#">
-            <!--Foto de DS stories en Pexels-->
-            <img src="../assets/new/preview_1.jpg">
-          </a>
-          <span class="arrow prod-arrow prod-arrow-left cursor-pointer">
-            <i class="fa-solid fa-chevron-circle-left"></i>
-          </span>
-          <span class="arrow prod-arrow prod-arrow-right cursor-pointer">
-            <i class="fa-solid fa-chevron-circle-right"></i>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            <!--<a href='https://www.freepik.es/psd/logo'>Psd de Logo creado por originalmockup - www.freepik.es</a>-->
-            <img src="../assets/new/preview_2.jpg">
-          </a>
-          <span class="arrow prod-arrow prod-arrow-left cursor-pointer">
-            <i class="fa-solid fa-chevron-circle-left"></i>
-          </span>
-          <span class="arrow prod-arrow prod-arrow-right cursor-pointer">
-            <i class="fa-solid fa-chevron-circle-right"></i>
-        </li>
-        <li>
-          <a href="#">
-            <!--<a href='https://www.freepik.es/fotos/fondo'>Foto de Fondo creado por mrsiraphol - www.freepik.es</a>-->
-            <img src="../assets/new/preview_3.jpg">
-          </a>
-          <span class="arrow prod-arrow prod-arrow-left cursor-pointer">
-            <i class="fa-solid fa-chevron-circle-left"></i>
-          </span>
-          <span class="arrow prod-arrow prod-arrow-right cursor-pointer">
-            <i class="fa-solid fa-chevron-circle-right"></i>
-        </li>
-      </ul>
+  <main>
+    <section id="home">
+      <section id="prod-primary" class="prod">
+        <div id="selector-prod-primary" class="prod-header">
+          <div selected>Lo Más Reciente</div>
+          <div>Productos Populares</div>
+          <!-- <hr /> -->
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <!--Foto de DS stories en Pexels-->
+              <img src="../assets/img/main-prod/new/preview_1.jpg">
+            </a>
+            <span class="arrow prod-arrow prod-arrow-left cursor-pointer">
+              <i class="fa-solid fa-chevron-circle-left"></i>
+            </span>
+            <span class="arrow prod-arrow prod-arrow-right cursor-pointer">
+              <i class="fa-solid fa-chevron-circle-right"></i>
+            </span>
+          </li>
+          <li>
+            <a href="#">
+              <!--<a href='https://www.freepik.es/psd/logo'>Psd de Logo creado por originalmockup - www.freepik.es</a>-->
+              <img src="../assets/img/main-prod/new/preview_2.jpg">
+            </a>
+            <span class="arrow prod-arrow prod-arrow-left cursor-pointer">
+              <i class="fa-solid fa-chevron-circle-left"></i>
+            </span>
+            <span class="arrow prod-arrow prod-arrow-right cursor-pointer">
+              <i class="fa-solid fa-chevron-circle-right"></i>
+          </li>
+          <li>
+            <a href="#">
+              <!--<a href='https://www.freepik.es/fotos/fondo'>Foto de Fondo creado por mrsiraphol - www.freepik.es</a>-->
+              <img src="../assets/img/main-prod/new/preview_3.jpg">
+            </a>
+            <span class="arrow prod-arrow prod-arrow-left cursor-pointer">
+              <i class="fa-solid fa-chevron-circle-left"></i>
+            </span>
+            <span class="arrow prod-arrow prod-arrow-right cursor-pointer">
+              <i class="fa-solid fa-chevron-circle-right"></i>
+          </li>
+        </ul>
+      </section>
+      <section id="prod-secondary" class="prod">
+        <div class="prod-header">
+          <div>Ofertas</div>
+          <!-- <hr /> -->
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <!-- <a href="https://www.freepik.com/free-psd/offer-day-banner-post-portuguese-3d-render-marketing-campaign-brazil_28500066.htm#query=offer&position=0&from_view=search">Image by ranilson-arruda</a> on Freepik -->
+              <img src="../assets/img/offers/offer_2.jpg" alt="Oferta">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <!-- <a href="https://www.freepik.com/free-psd/banner-offer-hour-brazil-render-3d-template-design-portuguese_17676489.htm#query=offer&position=5&from_view=search">Image by ranilson-arruda</a> on Freepik -->
+              <img src="../assets/img/offers/offer_1.jpg" alt="Oferta">
+            </a>
+          </li>
+        </ul>
+      </section>
     </section>
 
     <section id="banner-prom" class="banner">
       <div class="slider">
         <ul>
           <li>
-            <a href="#"><img src="../assets/banner/prom/banner_1.png"></a>
+            <a href="#"><img src="../assets/img/banner-prom/banner_1.png"></a>
           <li>
-            <a href="#"><img src="../assets/banner/prom/banner_2.png"></a>
+            <a href="#"><img src="../assets/img/banner-prom/banner_2.png"></a>
           <li>
-            <a href="#"><img src="../assets/banner/prom/banner_3.png"></a>
+            <a href="#"><img src="../assets/img/banner-prom/banner_3.png"></a>
           </li>
         </ul>
         <span class="arrow arrow-left banner-arrow cursor-pointer">
@@ -156,82 +184,85 @@
         </span>
       </div>
     </section>
-    
-    <div class="slide">
+
+    <div class="slide hidden">
       <span>Los alimentos que buscas</span>
       <!-- <a href='https://www.freepik.com/photos/frame'>Frame photo created by freepik - www.freepik.com</a> -->
       <a href="#" class="slide__item">
-        <img src="../assets/categories/food/veg.jpg">
+        <img src="../assets/img/categories/food/veg.jpg">
       </a>
       <a href="#" class="slide__item">
-        <img src="../assets/categories/food/grain.jpg">
+        <img src="../assets/img/categories/food/grain.jpg">
       </a>
       <!-- https://www.pexels.com/es-es/foto/comida-madera-filete-carne-5774154/ -->
       <a href="#" class="slide__item">
-        <img src="../assets/categories/food/meat.jpg">
+        <img src="../assets/img/categories/food/meat.jpg">
       </a>
       <!-- https://www.pexels.com/es-es/foto/close-up-de-leche-contra-el-fondo-azul-248412/ -->
       <a href="#" class="slide__item">
-        <img src="../assets/categories/food/lac.jpg">
+        <img src="../assets/img/categories/food/lac.jpg">
       </a>
       <!-- Image by <a href="https://pixabay.com/users/margenauer-271373/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=356102">Marge Nauer</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=356102">Pixabay</a> -->
       <a href="#" class="slide__item">
-        <img src="../assets/categories/food/oil.jpg">
+        <img src="../assets/img/categories/food/oil.jpg">
       </a>
       <!-- Image by <a href="https://pixabay.com/users/couleur-1195798/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1585060">Couleur</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1585060">Pixabay</a> -->
       <a href="#" class="slide__item">
-        <img src="../assets/categories/food/tuber.jpg">
+        <img src="../assets/img/categories/food/tuber.jpg">
       </a>
     </div>
-    <div class="clothes">
+
+    <div class="clothes hidden">
       <span>Mantente a la moda</span>
       <!-- Image by <a href="https://pixabay.com/users/stevepb-282134/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=584850">Steve Buissinne</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=584850">Pixabay</a> -->
       <a href="#" class="slide__item">
-        <img src="../assets/categories/clothes/shoes.jpg">
+        <img src="../assets/img/categories/clothes/shoes.jpg">
       </a>
       <!-- https://pixabay.com/photos/t-shirt-design-book-self-boy-2336850/ -->
       <a href="#" class="slide__item">
-        <img src="../assets/categories/clothes/t-shirt.jpg">
+        <img src="../assets/img/categories/clothes/t-shirt.jpg">
       </a>
       <!-- https://www.pexels.com/es-es/foto/calzado-converse-disenar-estilo-52574/ -->
       <a href="#" class="slide__item">
-        <img src="../assets/categories/clothes/jeans.jpg">
+        <img src="../assets/img/categories/clothes/jeans.jpg">
       </a>
       <!-- Image by <a href="https://pixabay.com/users/stux-12364/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=377487">Thanks for your Like • donations welcome</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=377487">Pixabay</a> -->
       <a href="#" class="slide__item">
-        <img src="../assets/categories/clothes/underwear.jpg">
+        <img src="../assets/img/categories/clothes/underwear.jpg">
       </a>
       <!-- Foto de Jeffrey Reed en Pexels -->
       <a href="#" class="slide__item">
-        <img src="../assets/categories/clothes/shirt.jpg">
+        <img src="../assets/img/categories/clothes/shirt.jpg">
       </a>
       <!-- Foto de Quang Anh Ha Nguyen en Pexels -->
       <a href="#" class="slide__item">
-        <img src="../assets/categories/clothes/dress.jpg">
+        <img src="../assets/img/categories/clothes/dress.jpg">
       </a>
     </div>
-    <section class="banner prom">
+
+    <section class="hidden">
       <a href="#" class="banner prom">
         <p class="banner_txt">¿QUÉ PRODUCTO QUIERES VENDER?</span>
       </a>
       <a href=""><i class="fas fa-angle-left"></i></a>
       <a href=""><i class="fas fa-angle-right"></i></a>
     </section>
-  </div>
+  </main>
 
-  <section class="social">
-    <p id="social__p">Síguenos en redes</span>
-    <!--
-            <i class="fab fa-facebook-f">
-                <i class="fab fa-facebook">
-        -->
-    <a href="#" class="social__a"><i class="fab fa-facebook-square"></i></a>
+  <section id="social">
+    <div>Síguenos en redes</div>
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+    </ul>
+    <!-- <a href="#" class="social__a"><i class="fab fa-facebook-square"></i></a>
     <a href="#" class="social__a"><i class="fab fa-instagram"></i></a>
-    <a href="#" class="social__a"><i class="fab fa-twitter"></i></a>
-
+    <a href="#" class="social__a"><i class="fab fa-twitter"></i></a> -->
   </section>
 
-  <div class="footer">
+  <footer>
     <ul>
       <li>
         <a href="#">
@@ -250,62 +281,62 @@
       <li>
         <a href="#">Miscelánea</a>
       </li>
-      </u>
-      <ul>
-        <li>
-          <a href="#">
-            <h3>NUESTRA EMPRESA</h3>
-          </a>
-        </li>
-        <li>
-          <a href="#">Domicilios</a>
-        </li>
-        <li>
-          <a href="#">Quiénes Somos</a>
-        </li>
-        <li>
-          <a href="#">Trabaja con Nosotros</a>
-        </li>
-        </u>
-        <ul>
-          <li>
-            <a href="#">
-              <h3>INFORMACIÓN LEGAL</h3>
-            </a>
-          </li>
-          <li>
-            <a href="#">General</a>
-          </li>
-          <li>
-            <a href="#">Términos y Condiciones</a>
-          </li>
-          <li>
-            <a href="#">Política de Privacidad</a>
-          </li>
-          <li>
-            <a href="#">Política de Reembolso</a>
-          </li>
-          </u>
-          <ul>
-            <li>
-              <a href="#">
-                <h3>ATENCIÓN AL CLIENTE</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-question-circle"></i>Preguntas Frecuentes</a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-phone-alt"></i>9999999999</a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-mobile-alt"></i>+57 999999999</a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-envelope"></i>atencionalcliente@unetz.com</a>
-            </li>
-            </u>
-  </div>
+    </ul>
+    <ul>
+      <li>
+        <a href="#">
+          <h3>NUESTRA EMPRESA</h3>
+        </a>
+      </li>
+      <li>
+        <a href="#">Domicilios</a>
+      </li>
+      <li>
+        <a href="#">Quiénes Somos</a>
+      </li>
+      <li>
+        <a href="#">Trabaja con Nosotros</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#">
+          <h3>INFORMACIÓN LEGAL</h3>
+        </a>
+      </li>
+      <li>
+        <a href="#">General</a>
+      </li>
+      <li>
+        <a href="#">Términos y Condiciones</a>
+      </li>
+      <li>
+        <a href="#">Política de Privacidad</a>
+      </li>
+      <li>
+        <a href="#">Política de Reembolso</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#">
+          <h3>ATENCIÓN AL CLIENTE</h3>
+        </a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-question-circle"></i>Preguntas Frecuentes</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-phone-alt"></i>9999999999</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-mobile-alt"></i>+57 999999999</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-envelope"></i>atencionalcliente@unetz.com</a>
+      </li>
+    </ul>
+  </footer>
 
   <script type="module" src="../js/index.js"></script>
   <!-- <script src="https://unpkg.com/scrollreveal"></script> -->

@@ -2,7 +2,7 @@ const INTERVAL = 5000;
 const TRANSITION_DURATION = 1000;
 const sliders = {};
 
-export default function xd() {
+export default function slides() {
     sliding(document.querySelector('#banner-prom .slider'));
 }
 
@@ -56,7 +56,7 @@ function move($slides, dir, id) {
         setTimeout(() => {
             $last.style.animation = 'none';
             sliders[id].moving = false;
-        }, 1000);
+        }, TRANSITION_DURATION);
 
     } else { //move right
         const $first = $slides.firstElementChild;
@@ -67,6 +67,6 @@ function move($slides, dir, id) {
             $slides.insertAdjacentElement('beforeend', $first);
             $first.style.animation = 'none';
             sliders[id].moving = false;
-        }, 1000);
+        }, TRANSITION_DURATION);
     }
 }
