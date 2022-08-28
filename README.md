@@ -1,7 +1,7 @@
 # Unetz
 E-commerce type website with using Vanilla JS.
 
-<img src="https://user-images.githubusercontent.com/73978713/187056996-4cf04fe2-ce59-4d94-b8df-e7354fc8861d.png" height="540">
+<img src="https://user-images.githubusercontent.com/73978713/187056996-4cf04fe2-ce59-4d94-b8df-e7354fc8861d.png" height="500">
 
 ### Built With
  - [Node.js](https://nodejs.org/es/)
