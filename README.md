@@ -29,3 +29,5 @@ Run the application
 ## Acknowledgements
  - [Coolors](https://coolors.co)
  - [Hero Patterns](https://heropatterns.com)
+ - [freepik](https://freepik.com)
+ - [pixabay](https://pixabay.com)
