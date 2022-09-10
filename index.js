@@ -5,8 +5,7 @@ const express = require('express'),
     server = http.createServer(app);
 // 
 
-console.log(__dirname);
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 5000);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public/html')));
 
