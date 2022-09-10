@@ -16,7 +16,7 @@ E-commerce type website with using Vanilla JS.
 
 You can clone this repsitory to get the source code
 
-    git clone https://github.com/vergaraldvm/Unetz.git
+    git clone https://github.com/leovergaramarq/Unetz.git
 
 Install dependencies
 
