@@ -4,7 +4,7 @@
   "description": "First Unetz's design!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "casperjs test ./casperjs/generalTests.js",
     "start": "node",
     "gulp": "gulp",
     "dev": "nodemon"
@@ -15,11 +15,22 @@
   "author": "Leonardo Vergara",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "phantomjs": "^2.1.7"
   },
   "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "casperjs": "^1.1.4",
+    "csslint-stylish": "^0.0.6",
     "gulp": "^4.0.2",
+    "gulp-casperjs": "^0.0.7",
+    "gulp-csslint": "^1.0.1",
+    "gulp-env": "^0.4.0",
+    "gulp-jslint": "^1.0.10",
     "gulp-live-server": "^0.0.31",
+    "gulp-nodemon": "^2.5.0",
+    "gulp-phantom": "^0.0.6",
+    "gulp-phantom-jasmine": "^2.1.0",
     "gulp-webserver": "^0.9.1",
     "nodemon": "^2.0.19",
     "opn": "^6.0.0"
